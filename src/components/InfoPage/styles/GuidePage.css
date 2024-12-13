@@ -1,0 +1,142 @@
+.guidePage-title {
+  margin-top: 150px;
+  display: flex;
+  justify-self: center;
+  color: #4d4d4d;
+  font-weight: bold;
+  margin-bottom: 60px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.slider-container {
+  background-color: #c7e5c2;
+  height: 650px;
+  padding: 20px;
+}
+.slider-page {
+  background-color: ivory;
+  border-radius: 20px;
+  height: 550px;
+  margin-top: 20px;
+
+  opacity: 0; /* 초기에는 보이지 않음 */
+  transition: opacity 0.5s ease; /* 부드럽게 전환 */
+}
+.slider-page.active {
+  opacity: 1;
+  animation: active 0.5s ease-in-out; /* fadeIn 애니메이션 실행 */
+}
+@keyframes active {
+  from {
+    opacity: 0; /* 완전히 투명 */
+  }
+  to {
+    opacity: 1; /* 완전히 나타남 */
+  }
+}
+
+/* CustomSlider.css */
+/* 슬라이더 컨테이너 */
+.slick-slider {
+  height: 600px;
+  margin: 0 10%; /* 가운데 정렬 */
+  padding: 25px;
+}
+/* Arrows */
+.slick-prev:before,
+.slick-next:before {
+  content: ""; /* 기본 화살표 숨기기 */
+  display: none !important; /* 강제로 숨기기 */
+}
+
+/* Dots */
+.slick-dotted.slick-slider {
+  margin-bottom: 30px;
+}
+
+.slick-dots {
+  position: absolute;
+  top: 0px;
+  right: 0.5px;
+
+  display: flex !important;
+  justify-content: center;
+
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+
+  text-align: center;
+}
+.slick-dots li {
+  position: relative;
+
+  display: inline-block;
+
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+
+  cursor: pointer;
+}
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+
+  display: block;
+
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+
+  cursor: pointer;
+
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  opacity: 1;
+}
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 20px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 20px;
+  height: 20px;
+
+  content: "•";
+  text-align: center;
+
+  opacity: 0.25;
+  color: black;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: black;
+}

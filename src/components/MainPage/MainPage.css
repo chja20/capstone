@@ -1,0 +1,13 @@
+.App {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.section {
+  height: 100vh; /* 뷰포트의 전체 높이를 차지 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}

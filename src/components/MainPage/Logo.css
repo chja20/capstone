@@ -1,0 +1,13 @@
+.logo {
+    position: fixed; /* 화면에서 고정 */
+    top: 10px; /* 화면 상단에서 10px 아래 */
+    left: 10px; /* 화면 왼쪽에서 10px 오른쪽 */
+    font-size: 1.5em; /* 폰트 크기 */
+    color: #fff; /* 텍스트 색상 */
+    background: rgba(0, 0, 0, 0.5); /* 반투명 배경 */
+    padding: 8px 16px; /* 안쪽 여백 */
+    border-radius: 5px; /* 둥근 모서리 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* 약간의 그림자 */
+    z-index: 1000; /* 다른 요소 위로 표시 */
+  }
+  

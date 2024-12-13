@@ -1,0 +1,113 @@
+.section.section5 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  opacity: 0; /* 초기 상태는 보이지 않도록 설정 */
+  transition: opacity 0.6s ease-in-out; /* 서서히 나타나도록 설정 */
+}
+
+.section.section5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/src/components/MainPage/image/Section5.jpg"); /* 이미지 경로 수정 */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.content5 {
+  text-align: center;
+  padding: 20px;
+}
+
+.content5 h1 {
+  margin-top: 5%;
+  font-size: 3.5em;
+  color: #000000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* 텍스트 그림자 */
+  letter-spacing: 2px;
+  font-family: "Gowun Dodum", sans-serif;
+  animation: fadeIn 2s ease-in-out; /* 서서히 나타나는 애니메이션 */
+}
+
+.content5 .text-box {
+  position: absolute; /* 박스가 섹션 전체를 덮도록 설정 */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(216, 255, 202, 0.511); /* 연한 반투명 배경 */
+  backdrop-filter: blur(4px); /* 블러 효과 추가 */
+  z-index: 0; /* 텍스트 뒤에 위치 */
+}
+
+.content5 p {
+  font-size: 1.3em;
+  color: #000000;
+  max-width: 900px;
+  margin: 20px auto;
+  line-height: 1.8;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  font-family: "Gowun Dodum", sans-serif;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 20px;
+  font-size: 1em;
+  color: #000000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  animation: bounce 2s infinite;
+  font-family: "Gowun Dodum", sans-serif;
+}
+
+/* 애니메이션 정의 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.custom-button4 {
+  margin-top: 330px;
+  margin-right: 50px;
+  padding: 13px 50px;
+  font-size: 30px;
+  background-color: #3e6f35;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative; /* 위치를 조정 가능하도록 설정 */
+  z-index: 2; /* 버튼이 모든 요소 위에 표시되도록 설정 */
+  transition: background-color 0.3s ease;
+}
+
+/* fade-in 클래스 추가 */
+.section5.fade-in {
+  opacity: 1; /* 화면에 보일 때 애니메이션 적용 */
+}

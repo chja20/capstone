@@ -1,0 +1,25 @@
+.filter-line {
+  background-color: #c7e5c2;
+  border-radius: 10px;
+  margin: 20px 10px;
+  /* min-width: 1340px; */
+  height: 36px;
+  display: flex;
+  align-items: center;
+}
+.select-box {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+select {
+  margin-right: 6px;
+  border-radius: 30px;
+  border: 1px none;
+  height: 22px;
+  text-align: center;
+  font-weight: bold;
+  padding: 0 5px;
+  color: #4d4d4d;
+  cursor: pointer;
+}

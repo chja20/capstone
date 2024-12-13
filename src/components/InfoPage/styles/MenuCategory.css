@@ -1,0 +1,25 @@
+.MenuCategory {
+  position: absolute;
+  top: 20px;
+  right: 5%;
+  z-index: 999;
+}
+.menu-button {
+  background-color: #3e6f35;
+  border: none;
+  border-radius: 20px;
+  padding: 5px 20px;
+  margin-left: 5px;
+  color: white;
+  font-weight: 600;
+}
+.menu-button:hover {
+  background-color: #c7e5c2;
+  color: #4d4d4d;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+.menu-button:not(:hover) {
+  transition: 0.2s ease-out;
+}

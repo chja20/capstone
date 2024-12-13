@@ -1,0 +1,61 @@
+.animal-card-open-modal {
+  /* background-color: #f7eedd; */
+  border: solid 2px #e0e0e0;
+  border-radius: 10px;
+  height: 300px;
+  width: 210px;
+  position: relative;
+}
+.animal-card-open-modal:hover {
+  cursor: pointer;
+  border: solid 2px #3e6f35;
+  transition: 0.2s ease-out;
+}
+.animal-card-open-modal:not(:hover) {
+  transition: 0.2s ease-out;
+}
+.animal-top-date {
+  background-color: #3e6f35;
+  border-radius: 20px;
+  width: 80px;
+  padding: 0 0 2px 0;
+  margin-bottom: 2px;
+  position: absolute;
+  top: 6px;
+}
+.animal-top-date-text {
+  color: white;
+  font-size: small;
+  font-weight: 500;
+  text-align: center;
+  margin: 0 10px;
+}
+.animal-img {
+  height: 160px;
+  margin: 15px 10px 10px 10px;
+}
+.animal-img-modal {
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+.mini-info {
+  border-radius: 5px;
+  height: auto;
+  margin: 0 12px;
+}
+.mini-info-box {
+  margin: 5px 0 0 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.mini-info-title {
+  font-size: small;
+  font-weight: 600;
+  color: #4a6d4f;
+}
+.mini-info-text {
+  font-size: small;
+  margin-left: 10px;
+}

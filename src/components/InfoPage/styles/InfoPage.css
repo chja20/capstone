@@ -1,0 +1,61 @@
+/* .InfoPage {
+  background-color: #f5ecd7;
+} */
+Header {
+  /* background-color: pink; */
+  padding-top: 50px;
+}
+.header-box {
+  display: flex;
+  align-items: center;
+  margin: 0 0 0 5%;
+}
+.web-title {
+  background-color: silver;
+  /* margin: 70px 0 20px 10px; */
+  width: 300px;
+  font-size: large;
+  font-weight: bold;
+  color: #4d4d4d;
+}
+main {
+  margin: 80px 5% 50px 5%;
+}
+.section-title {
+  /* margin-top: 50px; */
+  color: #4d4d4d;
+}
+.section-title-text {
+  text-align: center;
+  /* font-size: large; */
+  font-weight: 600;
+  margin-bottom: 60px;
+
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.web-info-box {
+  background-color: #f1f0f0;
+  /* border: 3px solid #c7e5c2; */
+  border-radius: 5px;
+  margin: 20px 10px 0 10px;
+  padding: 5px 0;
+}
+.web-info-box-text {
+  font-size: small;
+  margin-left: 30px;
+}
+* {
+  font-family: "Gowun Dodum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}

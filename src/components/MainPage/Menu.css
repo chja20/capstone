@@ -1,0 +1,60 @@
+.menu {
+  position: fixed;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  z-index: 1000; /* 다른 요소 위에 표시 */
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative; /* 줄을 추가하기 위해 position 설정 */
+}
+
+.menu li {
+  cursor: pointer;
+  width: 40px; /* 버튼 크기 조정 */
+  height: 40px; /* 버튼 크기 조정 */
+  background-color: #333;
+  color: white;
+  border-radius: 50%; /* 원형 버튼 */
+  text-align: center;
+  line-height: 40px; /* 텍스트를 중앙에 정렬 */
+  font-size: 18px; /* 글자 크기 */
+  font-weight: bold; /* 글자 강조 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* 약간의 그림자 효과 */
+  position: relative; /* 줄과의 배치 */
+  z-index: 2; /* 줄보다 위에 표시 */
+  margin-bottom: 60px; /* 버튼 사이 간격 강제 적용 */
+}
+
+.menu li:last-child {
+  margin-bottom: 0; /* 마지막 버튼 아래 간격 제거 */
+}
+
+.menu li:hover {
+  background-color: #555; /* 호버 시 색상 변경 */
+}
+
+/* 활성화된 버튼에 스타일 추가 */
+.menu li.active {
+  background-color: #f39c12; /* 활성화된 버튼 색상 */
+  font-size: 24px; /* 버튼 크기 키우기 */
+}
+
+/* 줄 스타일 */
+.menu ul::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%; /* 버튼 중심에 맞춤 */
+  transform: translateX(-50%);
+  width: 2px; /* 줄 두께 */
+  height: 100%; /* 줄 길이 (버튼 전체를 연결) */
+  background-color: #999; /* 줄 색상 */
+  z-index: 1; /* 버튼보다 뒤에 표시 */
+}

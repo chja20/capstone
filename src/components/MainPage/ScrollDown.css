@@ -1,0 +1,8 @@
+/* ScrollDown.css */
+.scroll-down {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.1em;
+    color: #666;
+    text-align: center;
+  }
